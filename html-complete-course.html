@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Course - From Basic to Advanced</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 3px solid #007acc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007acc;
+            border-left: 4px solid #007acc;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 25px;
+        }
+        .code-block {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        .example {
+            background-color: #e8f4fd;
+            border-left: 4px solid #007acc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .note {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007acc;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .nav {
+            background-color: #333;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .nav a:hover {
+            background-color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="">
+        <h1>Complete HTML Course: From Basic to Advanced</h1>
+        
+        <div class="nav">
+            <a href="#introduction">Introduction</a>
+            <a href="#basic">Basic HTML</a>
+            <a href="#intermediate">Intermediate</a>
+            <a href="#advanced">Advanced</a>
+            <a href="#semantic">Semantic HTML</a>
+            <a href="#forms">Forms</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#best-practices">Best Practices</a>
+        </div>
+
+        <!-- INTRODUCTION SECTION -->
+        <div id="introduction" class="section">
+            <h2>1. Introduction to HTML</h2>
+            
+            <h3>What is HTML?</h3>
+            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. It describes the structure and content of web documents using elements and tags.</p>
+            
+            <div class="note">
+                <strong>Key Points:</strong>
+                <ul>
+                    <li>HTML is not a programming language - it's a markup language</li>
+                    <li>It uses tags to define elements</li>
+                    <li>It's the foundation of all web pages</li>
+                    <li>Current version is HTML5</li>
+                </ul>
+            </div>
+
+            <h3>Basic HTML Document Structure</h3>
+            <div class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Page content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </div>
+        </div>
+
+        <!-- BASIC HTML SECTION -->
+        <div id="basic" class="section">
+            <h2>2. Basic HTML Elements</h2>
+            
+            <h3>Headings</h3>
+            <p>HTML provides 6 levels of headings, from h1 (largest) to h6 (smallest):</p>
+            <div class="code-block">
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Section Heading&lt;/h2&gt;
+&lt;h3&gt;Subsection Heading&lt;/h3&gt;
+&lt;h4&gt;Sub-subsection Heading&lt;/h4&gt;
+&lt;h5&gt;Minor Heading&lt;/h5&gt;
+&lt;h6&gt;Smallest Heading&lt;/h6&gt;
+            </div>
+            
+            <div class="example">
+                <h1>This is an H1 heading</h1>
+                <h2>This is an H2 heading</h2>
+                <h3>This is an H3 heading</h3>
+                <h4>This is an H4 heading</h4>
+                <h5>This is an H5 heading</h5>
+                <h6>This is an H6 heading</h6>
+            </div>
+
+            <h3>Paragraphs and Text Formatting</h3>
+            <div class="code-block">
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph with &lt;strong&gt;bold text&lt;/strong&gt; and &lt;em&gt;italic text&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;You can also use &lt;b&gt;bold&lt;/b&gt; and &lt;i&gt;italic&lt;/i&gt; tags.&lt;/p&gt;
+&lt;p&gt;For &lt;u&gt;underlined text&lt;/u&gt; and &lt;mark&gt;highlighted text&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;Subscript: H&lt;sub&gt;2&lt;/sub&gt;O, Superscript: E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+            </div>
+
+            <div class="example">
+                <p>This is a paragraph.</p>
+                <p>This is another paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
+                <p>You can also use <b>bold</b> and <i>italic</i> tags.</p>
+                <p>For <u>underlined text</u> and <mark>highlighted text</mark>.</p>
+                <p>Subscript: H<sub>2</sub>O, Superscript: E=mc<sup>2</sup></p>
+            </div>
+
+            <h3>Links and Images</h3>
+            <div class="code-block">
+&lt;!-- Links --&gt;
+&lt;a href="https://www.example.com"&gt;External Link&lt;/a&gt;
+&lt;a href="#section1"&gt;Internal Link&lt;/a&gt;
+&lt;a href="mailto:someone@example.com"&gt;Email Link&lt;/a&gt;
+&lt;a href="tel:+1234567890"&gt;Phone Link&lt;/a&gt;
+
+&lt;!-- Images --&gt;
+&lt;img src="image.jpg" alt="Description of image" width="300" height="200"&gt;
+&lt;img src="https://via.placeholder.com/150" alt="Placeholder image"&gt;
+            </div>
+
+            <h3>Lists</h3>
+            <div class="code-block">
+&lt;!-- Unordered List --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered List --&gt;
+&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Description List --&gt;
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;
+            </div>
+
+            <div class="example">
+                <h4>Unordered List:</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                
+                <h4>Ordered List:</h4>
+                <ol>
+                    <li>Plan the website</li>
+                    <li>Write HTML structure</li>
+                    <li>Style with CSS</li>
+                    <li>Add JavaScript functionality</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- INTERMEDIATE HTML SECTION -->
+        <div id="intermediate" class="section">
+            <h2>3. Intermediate HTML</h2>
+            
+            <h3>Tables</h3>
+            <div class="code-block">
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John Doe&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+            &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jane Smith&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;Los Angeles&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+            </div>
+
+            <div class="example">
+                <h4>Example Table:</h4>
+                <table style="width: 100%; border-collapse: collapse;">
+                   <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Matric Num</th>
+                        <th>Course</th>
+                        <th>Age</th>
+                    </tr>
+                   </thead>
+                    <tbody>
+                        <tr>
+                            <td>Praise</td>
+                            <td>20230110105</td>
+                           <td>Educational Technology</td>
+                           <td>19</td>
+                        </tr>
+
+                        <tr>
+                            <td>Olashile</td>
+                            <td>20230110100</td>
+                            <td>Educational Technology</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>Khadijah</td>
+                            <td>20230110189</td>
+                            <td>Educational Technology</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>Wahab</td>
+                            <td>20230110002</td>
+                            <td>Educational Technology</td>
+                            <td>19</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Divisions and Spans</h3>
+            <div class="code-block">
+&lt;div class="container"&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;This is a paragraph with a &lt;span class="highlight"&gt;highlighted word&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="sidebar"&gt;
+    &lt;h3&gt;Sidebar Content&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Menu item 1&lt;/li&gt;
+        &lt;li&gt;Menu item 2&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+            </div>
+
+            <h3>Attributes</h3>
+            <div class="code-block">
+&lt;!-- Common attributes --&gt;
+&lt;div id="main-content" class="container highlight" data-section="home"&gt;
+    &lt;img src="image.jpg" alt="Description" title="Hover text" width="300"&gt;
+    &lt;a href="https://example.com" target="_blank" rel="noopener"&gt;External Link&lt;/a&gt;
+&lt;/div&gt;
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>Unique identifier for an element</td>
+                        <td>id="header"</td>
+                    </tr>
+                    <tr>
+                        <td>class</td>
+                        <td>One or more class names for styling</td>
+                        <td>class="btn primary"</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Tooltip text</td>
+                        <td>title="Click here"</td>
+                    </tr>
+                    <tr>
+                        <td>data-*</td>
+                        <td>Custom data attributes</td>
+                        <td>data-id="123"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ADVANCED HTML SECTION -->
+        <div id="advanced" class="section">
+            <h2>4. Advanced HTML Elements</h2>
+            
+            <h3>HTML5 Input Types</h3>
+            <div class="code-block">
+&lt;input type="email" placeholder="Enter your email"&gt;
+&lt;input type="password" placeholder="Enter password"&gt;
+&lt;input type="number" min="1" max="100" step="1"&gt;
+&lt;input type="date"&gt;
+&lt;input type="time"&gt;
+&lt;input type="datetime-local"&gt;
+&lt;input type="range" min="0" max="100" value="50"&gt;
+&lt;input type="color" value="#ff0000"&gt;
+&lt;input type="url" placeholder="https://example.com"&gt;
+&lt;input type="tel" placeholder="+1-234-567-8900"&gt;
+&lt;input type="search" placeholder="Search..."&gt;
+            </div>
+
+            <h3>Meta Tags</h3>
+            <div class="code-block">
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Page description for SEO"&gt;
+    &lt;meta name="keywords" content="html, css, javascript, web development"&gt;
+    &lt;meta name="author" content="Your Name"&gt;
+    &lt;meta name="robots" content="index, follow"&gt;
+    
+    &lt;!-- Open Graph for social media --&gt;
+    &lt;meta property="og:title" content="Page Title"&gt;
+    &lt;meta property="og:description" content="Page description"&gt;
+    &lt;meta property="og:image" content="image-url.jpg"&gt;
+    &lt;meta property="og:url" content="https://example.com"&gt;
+    
+    &lt;!-- Twitter Cards --&gt;
+    &lt;meta name="twitter:card" content="summary_large_image"&gt;
+    &lt;meta name="twitter:title" content="Page Title"&gt;
+    &lt;meta name="twitter:description" content="Page description"&gt;
+&lt;/head&gt;
+            </div>
+
+            <h3>Embedded Content</h3>
+            <div class="code-block">
+&lt;!-- Iframe --&gt;
+&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+        width="560" height="315" 
+        frameborder="0" 
+        allowfullscreen&gt;
+&lt;/iframe&gt;
+
+&lt;!-- Object for plugins --&gt;
+&lt;object data="document.pdf" type="application/pdf" width="600" height="400"&gt;
+    &lt;p&gt;Your browser doesn't support PDFs. 
+       &lt;a href="document.pdf"&gt;Download the PDF&lt;/a&gt;.&lt;/p&gt;
+&lt;/object&gt;
+
+&lt;!-- Embed for multimedia --&gt;
+&lt;embed src="animation.swf" width="400" height="300" type="application/x-shockwave-flash"&gt;
+            </div>
+        </div>
+
+        <!-- SEMANTIC HTML SECTION -->
+        <div id="semantic" class="section">
+            <h2>5. Semantic HTML5 Elements</h2>
+            
+            <p>Semantic elements clearly describe their meaning in a human and machine-readable way.</p>
+            
+            <div class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;section id="hero"&gt;
+            &lt;h1&gt;Welcome to Our Website&lt;/h1&gt;
+            &lt;p&gt;This is the main content area.&lt;/p&gt;
+        &lt;/section&gt;
+        
+        &lt;article&gt;
+            &lt;header&gt;
+                &lt;h2&gt;Article Title&lt;/h2&gt;
+                &lt;time datetime="2024-01-01"&gt;January 1, 2024&lt;/time&gt;
+            &lt;/header&gt;
+            &lt;p&gt;Article content goes here...&lt;/p&gt;
+            &lt;footer&gt;
+                &lt;p&gt;Written by: Author Name&lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    
+    &lt;aside&gt;
+        &lt;h3&gt;Sidebar&lt;/h3&gt;
+        &lt;p&gt;Related content or advertisements&lt;/p&gt;
+    &lt;/aside&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 Your Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Purpose</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Header section</td>
+                        <td>Page or section header</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Navigation links</td>
+                        <td>Main navigation menu</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Main content</td>
+                        <td>Primary content of the page</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Content section</td>
+                        <td>Thematic grouping of content</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Independent content</td>
+                        <td>Blog posts, news articles</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>Sidebar content</td>
+                        <td>Related content, ads</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Footer section</td>
+                        <td>Page or section footer</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Media with caption</td>
+                        <td>Images, diagrams with captions</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;time&gt;</td>
+                        <td>Date/time</td>
+                        <td>Machine-readable dates</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- FORMS SECTION -->
+        <div id="forms" class="section">
+            <h2>6. HTML Forms</h2>
+            
+            <h3>Complete Form Example</h3>
+            <div class="code-block">
+&lt;form action="/submit" method="POST" enctype="multipart/form-data"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personal Information&lt;/legend&gt;
+        
+        &lt;label for="name"&gt;Full Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;
+        
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+        
+        &lt;label for="age"&gt;Age:&lt;/label&gt;
+        &lt;input type="number" id="age" name="age" min="18" max="120"&gt;
+        
+        &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+        &lt;select id="gender" name="gender"&gt;
+            &lt;option value=""&gt;Select Gender&lt;/option&gt;
+            &lt;option value="male"&gt;Male&lt;/option&gt;
+            &lt;option value="female"&gt;Female&lt;/option&gt;
+            &lt;option value="other"&gt;Other&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;fieldset&gt;
+        &lt;legend&gt;Preferences&lt;/legend&gt;
+        
+        &lt;label&gt;Hobbies:&lt;/label&gt;
+        &lt;input type="checkbox" id="reading" name="hobbies" value="reading"&gt;
+        &lt;label for="reading"&gt;Reading&lt;/label&gt;
+        
+        &lt;input type="checkbox" id="sports" name="hobbies" value="sports"&gt;
+        &lt;label for="sports"&gt;Sports&lt;/label&gt;
+        
+        &lt;input type="checkbox" id="music" name="hobbies" value="music"&gt;
+        &lt;label for="music"&gt;Music&lt;/label&gt;
+        
+        &lt;br&gt;&lt;br&gt;
+        
+        &lt;label&gt;Subscription:&lt;/label&gt;
+        &lt;input type="radio" id="free" name="subscription" value="free" checked&gt;
+        &lt;label for="free"&gt;Free&lt;/label&gt;
+        
+        &lt;input type="radio" id="premium" name="subscription" value="premium"&gt;
+        &lt;label for="premium"&gt;Premium&lt;/label&gt;
+        
+        &lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="bio"&gt;Bio:&lt;/label&gt;
+        &lt;textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."&gt;&lt;/textarea&gt;
+        
+        &lt;label for="avatar"&gt;Profile Picture:&lt;/label&gt;
+        &lt;input type="file" id="avatar" name="avatar" accept="image/*"&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;button type="reset"&gt;Reset&lt;/button&gt;
+&lt;/form&gt;
+            </div>
+
+            <h3>Form Validation Attributes</h3>
+            <div class="code-block">
+&lt;input type="text" name="username" required minlength="3" maxlength="20"&gt;
+&lt;input type="email" name="email" required&gt;
+&lt;input type="password" name="password" required pattern=".{8,}"&gt;
+&lt;input type="number" name="quantity" min="1" max="100" step="1"&gt;
+&lt;input type="url" name="website" placeholder="https://example.com"&gt;
+&lt;textarea name="message" required maxlength="500"&gt;&lt;/textarea&gt;
+            </div>
+        </div>
+
+        <!-- MULTIMEDIA SECTION -->
+        <div id="multimedia" class="section">
+            <h2>7. Multimedia Elements</h2>
+            
+            <h3>Audio</h3>
+            <div class="code-block">
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;audio controls autoplay loop muted&gt;
+    &lt;source src="background-music.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+            </div>
+
+            <h3>Video</h3>
+            <div class="code-block">
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.ogg" type="video/ogg"&gt;
+    &lt;track src="subtitles.vtt" kind="subtitles" srclang="en" label="English"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;video controls poster="thumbnail.jpg" preload="metadata"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+            </div>
+
+            <h3>Canvas and SVG</h3>
+            <div class="code-block">
+&lt;!-- Canvas for drawing with JavaScript --&gt;
+&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"&gt;
+    Your browser does not support the canvas element.
+&lt;/canvas&gt;
+
+&lt;!-- SVG for vector graphics --&gt;
+&lt;svg width="100" height="100"&gt;
+    &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;
+&lt;/svg&gt;
+
+&lt;svg viewBox="0 0 200 200"&gt;
+    &lt;rect x="10" y="10" width="30" height="30" fill="blue" /&gt;
+    &lt;polygon points="60,20 100,40 100,80 60,100 20,80 20,40" fill="green" /&gt;
+&lt;/svg&gt;
+            </div>
+        </div>
+
+        <!-- BEST PRACTICES SECTION -->
+        <div id="best-practices" class="section">
+            <h2>8. HTML Best Practices</h2>
+            
+            <h3>Accessibility (a11y)</h3>
+            <div class="code-block">
+&lt;!-- Use semantic HTML --&gt;
+&lt;main&gt;
+    &lt;h1&gt;Page Title&lt;/h1&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Article Title&lt;/h2&gt;
+        &lt;p&gt;Article content...&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;!-- Provide alt text for images --&gt;
+&lt;img src="chart.jpg" alt="Sales increased by 25% in Q4 2023"&gt;
+
+&lt;!-- Use labels for form inputs --&gt;
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username" aria-describedby="username-help"&gt;
+&lt;div id="username-help"&gt;Must be 3-20 characters long&lt;/div&gt;
+
+&lt;!-- Use ARIA attributes when needed --&gt;
+&lt;button aria-expanded="false" aria-controls="menu"&gt;Menu&lt;/button&gt;
+&lt;ul id="menu" aria-hidden="true"&gt;
+    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            </div>
+
+            <h3>Performance Optimization</h3>
+            <div class="code-block">
+&lt;!-- Optimize images --&gt;
+&lt;img src="image.webp" alt="Description" loading="lazy" width="300" height="200"&gt;
+
+&lt;!-- Use appropriate meta tags --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+&lt;!-- Preload critical resources --&gt;
+&lt;link rel="preload" href="critical.css" as="style"&gt;
+&lt;link rel="preload" href="hero-image.jpg" as="image"&gt;
+
+&lt;!-- Defer non-critical scripts --&gt;
+&lt;script src="analytics.js" defer&gt;&lt;/script&gt;
+&lt;script src="non-critical.js" async&gt;&lt;/script&gt;
+            </div>
+
+            <h3>SEO Best Practices</h3>
+            <div class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Specific, Descriptive Page Title&lt;/title&gt;
+    &lt;meta name="description" content="Compelling description under 160 characters"&gt;
+    &lt;link rel="canonical" href="https://example.com/page"&gt;
+    
+    &lt;!-- Open Graph --&gt;
+    &lt;meta property="og:title" content="Page Title"&gt;
+    &lt;meta property="og:description" content="Page description"&gt;
+    &lt;meta property="og:image" content="https://example.com/image.jpg"&gt;
+    &lt;meta property="og:url" content="https://example.com/page"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Main Page Heading&lt;/h1&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Section Heading&lt;/h2&gt;
+            &lt;p&gt;Well-structured content with proper heading hierarchy&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </div>
+
+            <h3>Code Quality Guidelines</h3>
+            <div class="note">
+                <strong>HTML Best Practices:</strong>
+                <ul>
+                    <li><strong>Use lowercase</strong> for all HTML tags and attributes</li>
+                    <li><strong>Quote attribute values</strong> even when not required</li>
+                    <li><strong>Close all tags</strong> properly (even self-closing ones)</li>
+                    <li><strong>Validate your HTML</strong> using W3C validator</li>
+                    <li><strong>Use semantic elements</strong> instead of generic div/span</li>
+                    <li><strong>Keep nesting logical</strong> and consistent</li>
+                    <li><strong>Use comments</strong> to explain complex sections</li>
+                    <li><strong>Separate concerns</strong> - keep HTML for structure only</li>
+                </ul>
+            </div>
+
+            <div class="code-block">
+&lt;!-- Good HTML structure --&gt;
+&lt;article class="blog-post"&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Article Title&lt;/h2&gt;
+        &lt;time datetime="2024-01-01"&gt;January 1, 2024&lt;/time&gt;
+    &lt;/header&gt;
+    
+    &lt;section class="content"&gt;
+        &lt;p&gt;Article content goes here...&lt;/p&gt;
+        
+        &lt;figure&gt;
+            &lt;img src="diagram.jpg" alt="Process flow diagram" /&gt;
+            &lt;figcaption&gt;Figure 1: Process Flow&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/section&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;By &lt;a href="/author/john"&gt;John Doe&lt;/a&gt;&lt;/p&gt;
+        &lt;nav aria-label="Article tags"&gt;
+            &lt;a href="/tag/html"&gt;HTML&lt;/a&gt;
+            &lt;a href="/tag/web-dev"&gt;Web Development&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;
+            </div>
+        </div>
+
+        <!-- CONCLUSION -->
+        <div class="section">
+            <h2>9. Conclusion</h2>
+            <p>This comprehensive HTML course covers everything from basic elements to advanced semantic markup. HTML is the foundation of web development, and mastering these concepts will provide a solid base for learning CSS and JavaScript.</p>
+            
+            <div class="note">
+                <strong>Next Steps:</strong>
+                <ul>
+                    <li>Practice by building real projects</li>
+                    <li>Learn CSS for styling your HTML</li>
+                    <li>Study JavaScript for interactivity</li>
+                    <li>Explore modern frameworks like React, Vue, or Angular</li>
+                    <li>Keep up with web standards and accessibility guidelines</li>
+                </ul>
+            </div>
+            
+            <h3>Useful Resources</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a></li>
+                <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">WCAG Accessibility Guidelines</a></li>
+                <li><a href="https://caniuse.com/" target="_blank">Can I Use - Browser Support</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
